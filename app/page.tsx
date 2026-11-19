@@ -80,7 +80,7 @@ export default function HomePage() {
           </div>
 
           {/* Editorial Hairline Metrics Bar */}
-          <div className="mt-24 pt-12 border-t border-white/[0.08] grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+          <div className="scroll-fade mt-24 pt-12 border-t border-white/[0.08] grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
             <div>
               <div className="font-serif-headline text-3xl sm:text-4xl text-white font-light tracking-tight">$185M+</div>
               <div className="text-[11px] tracking-[0.2em] text-[#e9c176] uppercase font-medium mt-2">Deal Volume Sourced</div>
@@ -120,66 +120,56 @@ export default function HomePage() {
       </div>
 
       {/* =========================================================================
-          2. ETHOS & REFINED EDITORIAL PILLARS (Bridging the Gap)
+          2. THE HURLEYS ADVISORY PRACTICE
           ========================================================================= */}
-      <section className="w-full py-28 border-t border-white/[0.06] bg-[#101415]" id="advisory-ethos">
-        <div className="max-w-7xl mx-auto px-6 lg:px-16 space-y-20">
+      <section className="w-full py-24 border-t border-white/[0.06] bg-[#101415]" id="advisory-ethos">
+        <div className="max-w-7xl mx-auto px-6 lg:px-16 space-y-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             <div className="lg:col-span-5 space-y-4">
-              <div className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">The Hurleys Ethos</div>
+              <div className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">About Hurleys</div>
               <h2 className="font-serif-headline text-3xl sm:text-4xl font-normal text-white leading-tight">
-                Bridging International Capital and Viable Kenyan Real Estate
+                Trusted Real Estate & Land Advisory in Kenya
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-6 text-[#b5b0a6] font-light text-base sm:text-lg leading-relaxed">
               <p>
-                Hurleys International operates as an institutional fiduciary advisory desk rather than an open-market transactional brokerage. We bridge sovereign wealth offices, London and DIFC private family offices, and diaspora leaders directly to audited title deeds and vetted commercial pipelines.
+                Hurleys International is a premier private client advisory firm in Nairobi. We specialize in high-value land acquisition, luxury residential properties, and strategic joint ventures across Kenya&apos;s most sought-after corridors.
               </p>
-              <div className="pt-4 flex flex-wrap gap-8 text-[12px] tracking-[0.16em] uppercase text-white/70">
-                <span className="inline-flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-[#e9c176]"></span>
-                  Zero Intermediary Speculation
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-[#e9c176]"></span>
-                  CBK & AML Escrow Protocols
-                </span>
-                <span className="inline-flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-[#e9c176]"></span>
-                  Forensic Cadastral Conveyancing
-                </span>
-              </div>
+              <p className="text-sm sm:text-base text-[#b5b0a6]/90">
+                Whether you are an overseas diaspora investor seeking secure land in Karen, an institutional developer looking for high-density parcels in Westlands, or a landowner structuring a joint venture, our team provides discreet, advocate-supported guidance from search to title transfer.
+              </p>
             </div>
           </div>
 
-          {/* Minimalist Numbered Editorial Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 pt-8 border-t border-white/[0.06]">
-            <div className="space-y-3">
-              <div className="font-serif-headline text-2xl text-[#e9c176] font-normal">01</div>
-              <h3 className="text-white text-base font-semibold tracking-wide">ArdhiSasa Digital Audit</h3>
-              <p className="text-[#b5b0a6]/80 text-sm leading-relaxed font-light">
-                Ministry of Lands cadastral checks, beacon boundary confirmation, and encumbrance search before presentation.
+          {/* Three Core Practice Pillars */}
+          <div className="scroll-fade grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-white/[0.06]">
+            <div className="p-8 bg-[#14181a] border border-white/5 space-y-4 rounded-sm card-hover">
+              <div className="w-10 h-10 rounded border border-[#e9c176]/30 bg-[#1d2022] flex items-center justify-center text-[#e9c176]">
+                <Building2 className="w-5 h-5" />
+              </div>
+              <h3 className="text-white text-lg font-medium tracking-wide">Direct Titleholder Mandates</h3>
+              <p className="text-[#b5b0a6] text-sm leading-relaxed font-light">
+                We work directly with titled property owners and reputable developers. No inflated broker markups, no circulating unverified deeds—only verified, direct-from-source properties.
               </p>
             </div>
-            <div className="space-y-3">
-              <div className="font-serif-headline text-2xl text-[#e9c176] font-normal">02</div>
-              <h3 className="text-white text-base font-semibold tracking-wide">Direct Titleholder Mandates</h3>
-              <p className="text-[#b5b0a6]/80 text-sm leading-relaxed font-light">
-                Direct representation of titled landowners and tier-1 master developers eliminates multi-layer intermediary markup.
+
+            <div className="p-8 bg-[#14181a] border border-white/5 space-y-4 rounded-sm card-hover">
+              <div className="w-10 h-10 rounded border border-[#e9c176]/30 bg-[#1d2022] flex items-center justify-center text-[#e9c176]">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <h3 className="text-white text-lg font-medium tracking-wide">Comprehensive Title Due Diligence</h3>
+              <p className="text-[#b5b0a6] text-sm leading-relaxed font-light">
+                Every listing undergoes Ministry of Lands ArdhiSasa registry searches, licensed surveyor beacon verification, and county rates clearance before we present it to our clients.
               </p>
             </div>
-            <div className="space-y-3">
-              <div className="font-serif-headline text-2xl text-[#e9c176] font-normal">03</div>
-              <h3 className="text-white text-base font-semibold tracking-wide">Granular Yield Pro-Formas</h3>
-              <p className="text-[#b5b0a6]/80 text-sm leading-relaxed font-light">
-                DCF models incorporating construction cost inflation, withholding taxes, vacancy reserves, and capital exits.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <div className="font-serif-headline text-2xl text-[#e9c176] font-normal">04</div>
-              <h3 className="text-white text-base font-semibold tracking-wide">Remote Cross-Border Desk</h3>
-              <p className="text-[#b5b0a6]/80 text-sm leading-relaxed font-light">
-                Apostille power of attorney execution, high-res drone inspections, multi-currency escrow, and expat tenancy management.
+
+            <div className="p-8 bg-[#14181a] border border-white/5 space-y-4 rounded-sm card-hover">
+              <div className="w-10 h-10 rounded border border-[#e9c176]/30 bg-[#1d2022] flex items-center justify-center text-[#e9c176]">
+                <Globe2 className="w-5 h-5" />
+              </div>
+              <h3 className="text-white text-lg font-medium tracking-wide">Diaspora & Cross-Border Client Care</h3>
+              <p className="text-[#b5b0a6] text-sm leading-relaxed font-light">
+                Tailored for Kenyan diaspora and international investors in the UK, US, and UAE. Virtual property briefings, advocate escrow custody, and end-to-end conveyance support.
               </p>
             </div>
           </div>
@@ -209,7 +199,7 @@ export default function HomePage() {
             {featuredProperties.map((prop, index) => {
               const isEven = index % 2 === 1;
               return (
-                <div key={prop.id} className="card-hover p-6 lg:p-8 bg-[#14181a]/40 border border-white/5 rounded-sm grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+                <div key={prop.id} className="scroll-fade card-hover p-6 lg:p-8 bg-[#14181a]/40 border border-white/5 rounded-sm grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
                   <div className={`lg:col-span-7 relative overflow-hidden group ${isEven ? 'lg:order-2' : ''}`}>
                     <div className="aspect-[16/10] w-full overflow-hidden bg-[#15191c] rounded-sm">
                       <img 
@@ -351,7 +341,7 @@ export default function HomePage() {
 
           {/* GIS Map Strip */}
           <div 
-            className="w-full h-72 border border-white/[0.08] relative overflow-hidden bg-cover bg-center rounded-sm"
+            className="scroll-fade w-full h-72 border border-white/[0.08] relative overflow-hidden bg-cover bg-center rounded-sm"
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1600&q=80&fit=crop&auto=format')`
             }}
@@ -371,67 +361,49 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          6. THE FIDUCIARY CONTRAST LEDGER (Side-by-Side)
+          6. THE HURLEYS STANDARD (Four Commitments to Our Clients)
           ========================================================================= */}
-      <section className="w-full py-28 border-t border-white/[0.06] bg-[#101415]" id="fiduciary-contrast">
+      <section className="w-full py-24 border-t border-white/[0.06] bg-[#101415]" id="hurleys-standard">
         <div className="max-w-7xl mx-auto px-6 lg:px-16 space-y-16">
           <div className="max-w-3xl space-y-3">
-            <span className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">Fiduciary Standards</span>
-            <h2 className="font-serif-headline text-3xl sm:text-4xl font-normal text-white">Why Private & Diaspora Capital Selects Hurleys</h2>
+            <span className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">Why Work With Us</span>
+            <h2 className="font-serif-headline text-3xl sm:text-4xl font-normal text-white">The Hurleys Standard</h2>
             <p className="text-[#b5b0a6] font-light text-sm sm:text-base leading-relaxed">
-              Navigating prime Kenyan real estate requires institutional controls, legal rigor, and total transparency.
+              Navigating prime Kenyan real estate requires local relationships, rigorous due diligence, and transparent execution.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 pt-6 border-t border-white/[0.06]">
-            {/* Traditional Brokerage */}
-            <div className="space-y-6">
-              <div className="text-[12px] tracking-[0.2em] uppercase text-white/50 pb-3 border-b border-white/[0.08]">
-                Informal Market Realities
-              </div>
-              <div className="space-y-6 text-sm font-light text-[#b5b0a6]/80">
-                <div className="space-y-1">
-                  <div className="text-white/80 font-medium">Unauthenticated Open Listings</div>
-                  <p className="leading-relaxed">Dependence on word-of-mouth claims, non-digitized historical searches, and risk of overlapping deeds.</p>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-white/80 font-medium">Speculative Intermediary Markups</div>
-                  <p className="leading-relaxed">Brokers inflate acquisition pricing without vendor authorization to create untracked commissions.</p>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-white/80 font-medium">Unadjusted Gross Returns</div>
-                  <p className="leading-relaxed">Projections omit stamp duty, municipal ground rent, withholding tax, and capital expenditure buffers.</p>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-white/80 font-medium">Unprotected Direct Transfers</div>
-                  <p className="leading-relaxed">Capital remitted directly to developer operating accounts without milestone architectural sign-off.</p>
-                </div>
-              </div>
+          <div className="scroll-fade grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
+            <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">01 / Due Diligence</span>
+              <h3 className="text-white text-lg font-medium">Clean, Validated Deeds</h3>
+              <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                Official Ministry of Lands searches, beacon survey validation, and encumbrance checks completed before any property is presented.
+              </p>
             </div>
 
-            {/* Hurleys Standard */}
-            <div className="space-y-6">
-              <div className="text-[12px] tracking-[0.2em] uppercase text-[#e9c176] pb-3 border-b border-[#e9c176]/30">
-                Hurleys Advisory Protocol
-              </div>
-              <div className="space-y-6 text-sm font-light text-[#e0e3e5]">
-                <div className="space-y-1">
-                  <div className="text-[#e9c176] font-medium">ArdhiSasa Forensic Certification</div>
-                  <p className="text-[#b5b0a6] leading-relaxed">Full legal search, cadastre survey confirmation, and registrar validation completed prior to presentation.</p>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-[#e9c176] font-medium">Direct Mandate Representation</div>
-                  <p className="text-[#b5b0a6] leading-relaxed">Direct representation with institutional landowners ensuring uninflated vendor prices and clear contract terms.</p>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-[#e9c176] font-medium">Institutional Net DCF Modeling</div>
-                  <p className="text-[#b5b0a6] leading-relaxed">Comprehensive models factoring conveyance legalities, stamp levies, tenant turnover reserves, and inflation.</p>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-[#e9c176] font-medium">Regulated Multi-Currency Escrow</div>
-                  <p className="text-[#b5b0a6] leading-relaxed">Dedicated conveyancing advocate escrow; capital released strictly upon certified legal milestone handovers.</p>
-                </div>
-              </div>
+            <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">02 / Pricing</span>
+              <h3 className="text-white text-lg font-medium">Direct Mandate Pricing</h3>
+              <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                Direct agreements with titled landowners and developers protect buyers from multi-layer broker inflation and speculative markups.
+              </p>
+            </div>
+
+            <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">03 / Security</span>
+              <h3 className="text-white text-lg font-medium">Regulated Client Escrow</h3>
+              <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                Transactions settle through independent advocate escrow accounts, with capital released strictly upon registered title transfer.
+              </p>
+            </div>
+
+            <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">04 / Network</span>
+              <h3 className="text-white text-lg font-medium">Discreet Off-Market Access</h3>
+              <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                Access to prime Nairobi land parcels and boutique luxury developments shared confidentially with vetted private clients.
+              </p>
             </div>
           </div>
         </div>
@@ -456,7 +428,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Founder & CEO */}
-            <div className="card-hover p-8 sm:p-10 bg-[#14181a] border border-white/5 space-y-6 relative group rounded-sm">
+            <div className="scroll-fade card-hover p-8 sm:p-10 bg-[#14181a] border border-white/5 space-y-6 relative group rounded-sm">
               <div className="flex items-start justify-between">
                 <div>
                   <span className="text-[11px] text-[#e9c176] uppercase tracking-[0.2em] font-mono">
@@ -480,7 +452,7 @@ export default function HomePage() {
             </div>
 
             {/* Head of Sales */}
-            <div className="card-hover p-8 sm:p-10 bg-[#14181a] border border-white/5 space-y-6 relative group rounded-sm">
+            <div className="scroll-fade card-hover p-8 sm:p-10 bg-[#14181a] border border-white/5 space-y-6 relative group rounded-sm">
               <div className="flex items-start justify-between">
                 <div>
                   <span className="text-[11px] text-[#e9c176] uppercase tracking-[0.2em] font-mono">
@@ -507,46 +479,59 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          8. TESTIMONIALS & REPUTATION
+          8. TRACK RECORD & PRIME CORRIDORS
           ========================================================================= */}
       <section className="w-full py-24 border-t border-white/[0.06] bg-[#101415]">
         <div className="max-w-7xl mx-auto px-6 lg:px-16 space-y-16">
-          <div className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">Client Records</div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
-            <div className="space-y-4">
-              <p className="font-serif-headline text-base text-white/90 italic font-light leading-relaxed">
-                “Acquiring surveyed land in Nairobi from London previously felt fraught. Hurleys surveyed the property beacons, managed the Ministry searches, and closed via escrow seamlessly.”
-              </p>
-              <div className="pt-2 text-xs">
-                <div className="text-[#e9c176] font-medium">Dr. Angela Kariuki</div>
-                <div className="text-white/40 mt-0.5">Diaspora Physician • London, UK</div>
-              </div>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-white/[0.06]">
+            <div className="space-y-2 max-w-2xl">
+              <span className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">Regional Presence</span>
+              <h2 className="font-serif-headline text-3xl sm:text-4xl font-normal text-white">Advisory Focus Across Nairobi&apos;s Prime Corridors</h2>
             </div>
-            <div className="space-y-4">
-              <p className="font-serif-headline text-base text-white/90 italic font-light leading-relaxed">
-                “Hurleys presented a clean 1.8-acre Westlands parcel with institutional pro-formas already prepared for our investment committee. Their yield metrics were exceptionally grounded.”
-              </p>
-              <div className="pt-2 text-xs">
-                <div className="text-[#e9c176] font-medium">Tariq Mansoor</div>
-                <div className="text-white/40 mt-0.5">Private Equity Director • DIFC, Dubai</div>
-              </div>
+            <div className="text-sm text-[#b5b0a6] font-light max-w-md">
+              Over KES 18.5B in client transaction volume advised across Kenya&apos;s highest-performing residential and commercial nodes.
             </div>
-            <div className="space-y-4">
-              <p className="font-serif-headline text-base text-white/90 italic font-light leading-relaxed">
-                “As a family landowner on Kiambu Road, Hurleys structured an equitable JV with a tier-1 development firm rather than forcing a distressed outright sale.”
+          </div>
+
+          <div className="scroll-fade grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="p-6 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[11px] text-[#e9c176] font-mono uppercase tracking-wider block">Westlands & Riverside</span>
+              <h4 className="text-white text-base font-medium">Commercial & High-End Living</h4>
+              <p className="text-[#b5b0a6] text-xs font-light leading-relaxed">
+                Grade-A office towers, luxury serviced suites on General Mathenge, and turnkey residential assets favored by multinationals and embassies.
               </p>
-              <div className="pt-2 text-xs">
-                <div className="text-[#e9c176] font-medium">Joseph Mwangi</div>
-                <div className="text-white/40 mt-0.5">Estate Landowner • Kiambu, Kenya</div>
-              </div>
+            </div>
+
+            <div className="p-6 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[11px] text-[#e9c176] font-mono uppercase tracking-wider block">Karen & Diplomatic Zone</span>
+              <h4 className="text-white text-base font-medium">Country Estates & Enclaves</h4>
+              <p className="text-[#b5b0a6] text-xs font-light leading-relaxed">
+                Serene 0.5 to 5-acre red-soil parcels, private colonial-style family manors, and secure gated communities near international schools.
+              </p>
+            </div>
+
+            <div className="p-6 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[11px] text-[#e9c176] font-mono uppercase tracking-wider block">Kilimani & Upper Hill</span>
+              <h4 className="text-white text-base font-medium">Urban High-Density Growth</h4>
+              <p className="text-[#b5b0a6] text-xs font-light leading-relaxed">
+                High-density redevelopment plots, corner mixed-use sites, and high-yield apartment developments with consistent rental demand.
+              </p>
+            </div>
+
+            <div className="p-6 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+              <span className="text-[11px] text-[#e9c176] font-mono uppercase tracking-wider block">Kiambu Road & Athi River</span>
+              <h4 className="text-white text-base font-medium">Masterplanned Subdivisions</h4>
+              <p className="text-[#b5b0a6] text-xs font-light leading-relaxed">
+                Strategic 10 to 50-acre land holdings suitable for gated communities, industrial warehousing, and infrastructure-linked developments.
+              </p>
             </div>
           </div>
 
           <div className="pt-8 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-6 text-[11px] tracking-[0.2em] uppercase text-white/40 font-mono">
             <span>KPDA Corporate Member</span>
-            <span>EARB Regulated Real Estate Firm</span>
+            <span>EARB Regulated Real Estate Agency</span>
             <span>ArdhiSasa Digital Land Registry Compliant</span>
-            <span>Law Society of Kenya Standards</span>
+            <span>Law Society of Kenya Conveyancing Standards</span>
           </div>
         </div>
       </section>

@@ -9,12 +9,38 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Darker background when scrolled
+      setScrolled(currentScrollY > 40);
+
+      // Hide on scroll down, show on scroll up (unless mobile menu is open)
+      if (!mobileMenuOpen) {
+        if (currentScrollY > 90) {
+          if (currentScrollY > lastScrollY + 5) {
+            // Scrolling down
+            setVisible(false);
+          } else if (currentScrollY < lastScrollY - 5) {
+            // Scrolling up
+            setVisible(true);
+          }
+        } else {
+          // Near top of page
+          setVisible(true);
+        }
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY, mobileMenuOpen]);
 
   const navLinks = [
     { label: 'Overview', href: '/' },
@@ -27,7 +53,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+        visible ? 'translate-y-0' : '-translate-y-full'
+      } ${
         scrolled
           ? 'bg-[#0b0f10]/98 backdrop-blur-xl border-b border-[#e9c176]/25 shadow-[0_4px_30px_rgba(0,0,0,0.6)]'
           : 'bg-[#101415]/90 backdrop-blur-xl border-b border-white/[0.06]'
@@ -82,7 +110,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 text-[12px] uppercase tracking-wider text-[#b5b0a6] hover:text-[#e9c176] transition-colors duration-200"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span>
               <span>WhatsApp Desk</span>
             </a>
             <Link

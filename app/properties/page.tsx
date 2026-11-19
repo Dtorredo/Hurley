@@ -66,24 +66,24 @@ export default function PropertiesPage() {
             <div className="max-w-3xl space-y-4">
               <div className="flex items-center gap-3 text-[#e9c176] text-[11px] uppercase tracking-[0.25em] font-medium">
                 <span className="w-2 h-2 bg-[#e9c176]"></span>
-                <span>Fiduciary Advisory & Direct Sourcing Desk</span>
+                <span>Prime Property Portfolio & Direct Mandates</span>
               </div>
               <h1 className="font-serif-headline text-3xl sm:text-4xl lg:text-[48px] lg:leading-[56px] text-white tracking-tight font-normal">
-                Curated Kenyan Real Estate & Strategic Land Opportunities
+                Curated Properties & Strategic Land Across Kenya
               </h1>
               <p className="text-base sm:text-lg text-[#b5b0a6] font-light max-w-2xl leading-relaxed">
-                Thoroughly vetted, title-audited, and yield-optimized opportunities tailored for ultra-high-net-worth families, institutional capital, and diaspora private clients.
+                Vetted residential estates, high-density development sites, and strategic land parcels across Nairobi and environs.
               </p>
             </div>
 
             <div className="flex flex-col items-start lg:items-end gap-3 shrink-0 text-left lg:text-right">
               <div className="flex items-center gap-2 text-[#e9c176] text-[11px] uppercase tracking-widest font-semibold">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#e9c176] animate-ping"></span>
-                <span>Active Portfolio: Q4 2026</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#e9c176]"></span>
+                <span>Active Portfolio: 2026</span>
               </div>
-              <span className="text-xs text-[#9a8f80]">All deeds notarized under Advocate escrow custody</span>
+              <span className="text-xs text-[#9a8f80]">Direct title representation & advocate escrow</span>
               <span className="text-[10px] uppercase tracking-wider text-[#9a8f80]/80 border border-white/10 px-2.5 py-1">
-                ArdhiSasa Registry Cleared
+                Title Registry Verified
               </span>
             </div>
           </div>
@@ -152,16 +152,16 @@ export default function PropertiesPage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-white/[0.08]">
             <div className="space-y-1">
               <div className="flex items-center gap-2 text-[#e9c176] text-[11px] uppercase tracking-[0.25em] font-medium">
-                <span>Ledger Catalog</span>
+                <span>Featured Portfolio</span>
                 <span>•</span>
-                <span>Underwritten Direct Opportunities</span>
+                <span>Direct Mandates</span>
               </div>
               <h2 className="font-serif-headline text-2xl sm:text-3xl text-white tracking-tight">
                 Prime Land Parcels, Luxury Enclaves & High-Yield Assets
               </h2>
             </div>
             <p className="text-[#b5b0a6] text-sm max-w-md font-light leading-relaxed">
-              Uncompromised title ownership with zero legal defects, certified ArdhiSasa cadastral registry filings, and direct institutional infrastructure access.
+              Verified ownership, certified boundary beacons, and clear title documentation for private and institutional buyers.
             </p>
           </div>
 
@@ -173,7 +173,7 @@ export default function PropertiesPage() {
               )}`;
 
               return (
-                <article key={prop.id} className="card-hover p-6 lg:p-8 bg-[#14181a]/50 border border-white/5 rounded-sm space-y-8 pb-12">
+                <article key={prop.id} className="scroll-fade card-hover p-6 lg:p-8 bg-[#14181a]/50 border border-white/5 rounded-sm space-y-8 pb-12">
                   <div className="flex flex-col lg:flex-row items-start lg:items-baseline justify-between gap-4">
                     <div className="flex items-baseline gap-4">
                       <span className="font-serif-headline text-2xl text-[#9a8f80]/60 font-light italic">
@@ -261,13 +261,13 @@ export default function PropertiesPage() {
                           <button
                             onClick={() => {
                               showToast(
-                                'Information Memorandum Requested',
-                                `The underwriting pack for ${prop.title} has been queued. An advocate escrow summary will be emailed to you.`
+                                'Property Dossier Requested',
+                                `The information pack for ${prop.title} has been queued. An advisory summary will be emailed to you.`
                               );
                             }}
                             className="flex-1 py-3 px-5 border border-[#e9c176] text-[#e9c176] hover:bg-[#e9c176] hover:text-[#241802] text-center text-xs font-semibold tracking-widest uppercase transition-all rounded-sm"
                           >
-                            Request Due Diligence Dossier
+                            Request Property Dossier
                           </button>
                           <Link
                             href="/roi-calculator"
@@ -285,7 +285,7 @@ export default function PropertiesPage() {
                         >
                           <span className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span>
-                            <span>Direct Partner WhatsApp Desk: Request Title Abstract</span>
+                            <span>Direct WhatsApp Concierge: Enquire on this Property</span>
                           </span>
                           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                         </a>
@@ -358,7 +358,7 @@ export default function PropertiesPage() {
                   Have a Specific Parcel or Institutional Mandate in Mind?
                 </h3>
                 <p className="text-[#b5b0a6] font-light text-sm leading-relaxed">
-                  Over 60% of prime Nairobi land transactions transact off-market. Submit your exact acquisition parameters, and our desk will conduct targeted cadastral search, land assembly, or negotiate private mandates directly with audited title deed holders.
+                  Many of Nairobi&apos;s most desirable land parcels and private residences are transacted quietly off-market. Share your specific criteria, and our acquisitions team will source suitable opportunities directly from vetted title holders.
                 </p>
                 <div className="space-y-3 pt-4 border-t border-white/[0.08] text-xs">
                   <div className="flex items-center gap-3 text-white font-medium">
@@ -369,7 +369,7 @@ export default function PropertiesPage() {
                     Direct communication restricted to Hurleys Senior Acquisition Partners in London, Dubai, and Nairobi.
                   </p>
                   <div className="pt-2 text-[#e9c176] flex items-center gap-2 font-medium">
-                    <span className="w-2 h-2 rounded-full bg-[#e9c176] animate-pulse"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#e9c176]"></span>
                     <span>Average partner briefing turnaround: 4 business hours</span>
                   </div>
                 </div>
@@ -386,7 +386,7 @@ export default function PropertiesPage() {
                         required
                         value={sourcingForm.name}
                         onChange={(e) => setSourcingForm({ ...sourcingForm, name: e.target.value })}
-                        placeholder="Lord Sterling Family Office / Dr. K. Mutua"
+                        placeholder="e.g. Dr. Arthur Kibera"
                         className="w-full bg-transparent text-white text-sm border-0 p-0 focus:ring-0 placeholder:text-white/20 focus:outline-none"
                       />
                     </div>
@@ -397,7 +397,7 @@ export default function PropertiesPage() {
                         required
                         value={sourcingForm.email}
                         onChange={(e) => setSourcingForm({ ...sourcingForm, email: e.target.value })}
-                        placeholder="investor@sovereigncapital.com"
+                        placeholder="e.g. arthur@kiberaholdings.com"
                         className="w-full bg-transparent text-white text-sm border-0 p-0 focus:ring-0 placeholder:text-white/20 focus:outline-none"
                       />
                     </div>

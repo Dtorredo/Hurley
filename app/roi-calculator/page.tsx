@@ -568,7 +568,7 @@ export default function RoiCalculatorPage() {
 
           <div className="space-y-10">
             {/* Showcase 1: Westlands High-End Serviced Residence */}
-            <div className="card-hover grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border border-white/10 rounded-sm p-6 lg:p-8 bg-[#14181a]/50">
+            <div className="scroll-fade card-hover grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border border-white/10 rounded-sm p-6 lg:p-8 bg-[#14181a]/50">
               <div className="lg:col-span-5 relative h-64 lg:h-72 w-full rounded-sm overflow-hidden border border-white/10 group">
                 <img
                   src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80&fit=crop&auto=format"
@@ -626,7 +626,7 @@ export default function RoiCalculatorPage() {
             </div>
 
             {/* Showcase 2: Karen Luxury Estate */}
-            <div className="card-hover grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border border-white/10 rounded-sm p-6 lg:p-8 bg-[#14181a]/50">
+            <div className="scroll-fade card-hover grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border border-white/10 rounded-sm p-6 lg:p-8 bg-[#14181a]/50">
               <div className="lg:col-span-5 relative h-64 lg:h-72 w-full rounded-sm overflow-hidden border border-white/10 group">
                 <img
                   src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&fit=crop&auto=format"

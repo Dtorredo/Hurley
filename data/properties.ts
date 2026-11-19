@@ -41,7 +41,7 @@ export const PROPERTIES: Property[] = [
     displayPrice: "$3,200,000 USD (KES 415M)",
     footprint: "1.50 Freehold Acres (65,340 sq ft)",
     projectedIrr: "24.5% IRR",
-    titleStatus: "Freehold Single Title Deed • ArdhiSasa 2024 Audit Clean",
+    titleStatus: "Freehold Single Title Deed • ArdhiSasa Audit Clean",
     zoning: "Commercial / High-Density Res. (24 Storeys)",
     auditStatus: "Cadastre & Deed Completed",
     description: "High-density mixed-use development site situated along Nairobi's prime Kilimani commercial artery. Cleared for vertical expansion up to 24 suspended storeys with dual frontage tarmac access, perimeter wall, and audited zero encumbrances.",
@@ -105,19 +105,19 @@ export const PROPERTIES: Property[] = [
     titleStatus: "99-Year Clean Leasehold Title",
     zoning: "Low-Density Diplomatic Residential",
     auditStatus: "Fully Certified Title & Survey",
-    description: "Trophy colonial-contemporary residence situated on one private manicured acre. Features lap pool, solar microgrid, guest pavilion, and diplomatic-grade security protocols suitable for long-term embassy and UN high-commissioner leasing.",
+    description: "Trophy colonial-contemporary residence situated on one private manicured acre in Karen. Features 5 ensuite bedrooms, heated lap pool, solar microgrid, guest wing, mature gardens, and diplomatic-grade security protocols.",
     imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&fit=crop&auto=format",
     featured: true,
     metrics: [
-      { label: "Asset Valuation", value: "$1,950,000" },
-      { label: "Projected Rental", value: "$8,500 / mo USD" },
-      { label: "Tenure", value: "99-Year Leasehold" }
+      { label: "Asset Price", value: "$1,950,000 (KES 250M)" },
+      { label: "Bedrooms", value: "5 Ensuite + DSQ" },
+      { label: "Land Footprint", value: "1.00 Acre Mature Lawn" }
     ],
     specifications: [
-      { label: "Compound Footprint", value: "1.00 Acre Indigenous Lawn" },
-      { label: "Power & Water", value: "Solar Microgrid + Deep Borehole (18m³/hr)" },
-      { label: "Security Protocol", value: "Diplomatic US/EU Embassy Cleared" },
-      { label: "Tenancy Status", value: "Offered Vacant or with Expat Lease" }
+      { label: "Accommodations", value: "5 Ensuite Bedrooms, Study, Guest Suite & DSQ" },
+      { label: "Grounds & Leisure", value: "1.00 Acre Landscaped Lawn, Heated Lap Pool, Pavilion" },
+      { label: "Utilities & Power", value: "Solar Microgrid + Deep Borehole (18m³/hr)" },
+      { label: "Title Deed", value: "Clean 99-Year Leasehold Title Deed" }
     ]
   },
   {

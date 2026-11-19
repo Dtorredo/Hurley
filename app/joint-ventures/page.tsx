@@ -62,7 +62,7 @@ export default function JointVenturesPage() {
             <div className="lg:col-span-7 flex flex-col space-y-6">
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center gap-1.5 text-[11px] text-[#e9c176] uppercase tracking-[0.2em] font-medium">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#e9c176] animate-pulse"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#e9c176]"></span>
                   Institutional Development Desk • Nairobi
                 </span>
               </div>
@@ -235,7 +235,7 @@ export default function JointVenturesPage() {
                 ]
               }
             ].map((model) => (
-              <div key={model.num} className="py-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-white/[0.01] transition-colors">
+              <div key={model.num} className="scroll-fade py-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-white/[0.01] transition-colors">
                 <div className="lg:col-span-1">
                   <span className="font-serif-headline text-3xl text-[#e9c176]/60 italic font-mono">{model.num}</span>
                 </div>
