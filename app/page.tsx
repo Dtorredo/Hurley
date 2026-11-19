@@ -12,7 +12,8 @@ import {
   Layers, 
   Compass, 
   Globe2, 
-  Briefcase 
+  Briefcase,
+  Lock
 } from 'lucide-react';
 import { PROPERTIES, CORRIDOR_DATA } from '@/data/properties';
 import PrivateMandateForm from '@/components/PrivateMandateForm';
@@ -84,12 +85,12 @@ export default function HomePage() {
             <div>
               <div className="font-serif-headline text-3xl sm:text-4xl text-white font-light tracking-tight">$185M+</div>
               <div className="text-[11px] tracking-[0.2em] text-[#e9c176] uppercase font-medium mt-2">Deal Volume Sourced</div>
-              <p className="text-[12px] text-[#b5b0a6]/70 mt-1 font-light">Cross-border capital facilitation</p>
+              <p className="text-[12px] text-[#b5b0a6]/70 mt-1 font-light">Prime residential & development assets</p>
             </div>
             <div>
               <div className="font-serif-headline text-3xl sm:text-4xl text-white font-light tracking-tight">100%</div>
-              <div className="text-[11px] tracking-[0.2em] text-[#e9c176] uppercase font-medium mt-2">Title Integrity</div>
-              <p className="text-[12px] text-[#b5b0a6]/70 mt-1 font-light">ArdhiSasa & Ministry cadastre audited</p>
+              <div className="text-[11px] tracking-[0.2em] text-[#e9c176] uppercase font-medium mt-2">Title Verification</div>
+              <p className="text-[12px] text-[#b5b0a6]/70 mt-1 font-light">Official Ministry of Lands registry verified</p>
             </div>
             <div>
               <div className="font-serif-headline text-3xl sm:text-4xl text-white font-light tracking-tight">9.8% – 13.5%</div>
@@ -98,8 +99,8 @@ export default function HomePage() {
             </div>
             <div>
               <div className="font-serif-headline text-3xl sm:text-4xl text-white font-light tracking-tight">42+</div>
-              <div className="text-[11px] tracking-[0.2em] text-[#e9c176] uppercase font-medium mt-2">Institutional JVs</div>
-              <p className="text-[12px] text-[#b5b0a6]/70 mt-1 font-light">Direct landowner representation</p>
+              <div className="text-[11px] tracking-[0.2em] text-[#e9c176] uppercase font-medium mt-2">Development JVs</div>
+              <p className="text-[12px] text-[#b5b0a6]/70 mt-1 font-light">Direct landowner & developer partnerships</p>
             </div>
           </div>
         </div>
@@ -254,35 +255,79 @@ export default function HomePage() {
       </section>
 
       {/* =========================================================================
-          4. ADVISORY DIRECTORY (8 Services in Clean Minimal Index)
+          4. ADVISORY CAPABILITIES (Editorial Split Layout)
           ========================================================================= */}
       <section className="w-full py-28 border-t border-white/[0.06] bg-[#101415]" id="services">
         <div className="max-w-7xl mx-auto px-6 lg:px-16 space-y-16">
-          <div className="max-w-2xl space-y-3">
-            <span className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">Capabilities Index</span>
-            <h2 className="font-serif-headline text-3xl sm:text-4xl font-normal text-white">Institutional Services & Advisory</h2>
-            <p className="text-[#b5b0a6] font-light text-sm sm:text-base">
-              Disciplined private equity and fiduciary standards across the Kenyan property lifecycle.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16 pt-6">
-            {[
-              { num: "01", title: "Investment Consultancy", desc: "Macro trends, localized capital appreciation models, and regulatory conveyance guidance for overseas capital." },
-              { num: "02", title: "Land Acquisition Sourcing", desc: "Direct-to-owner land sourcing, cadastral survey reconstruction, and planning permission verification." },
-              { num: "03", title: "Residential Portfolios", desc: "Pre-construction bulk allocation, developer balance sheet audits, and structured payment milestones." },
-              { num: "04", title: "Commercial & Logistics", desc: "Grade-A office towers, medical suites, and light industrial logistics hubs aligned to transport bypasses." },
-              { num: "05", title: "Joint Venture Structuring", desc: "Equity ratio determination, Special Purpose Vehicle (SPV) formation, and escrow deed protection." },
-              { num: "06", title: "Remote Settlement Desk", desc: "Virtual notarization, power of attorney management, and compliant foreign currency SWIFT channels." },
-              { num: "07", title: "Feasibility & Pro-Formas", desc: "DCF analysis, multi-scenario sensitivity tables, and capital tax optimization under Kenyan law." },
-              { num: "08", title: "Asset & Tenancy Management", desc: "Corporate expat placement, automated USD/KES rent distributions, and periodic architectural inspections." }
-            ].map((srv) => (
-              <div key={srv.num} className="border-t border-white/[0.1] pt-6 space-y-3 group">
-                <span className="text-[#e9c176] text-xs font-mono tracking-wider">{srv.num}</span>
-                <h3 className="text-white font-medium text-base group-hover:text-[#e9c176] transition-colors">{srv.title}</h3>
-                <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">{srv.desc}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+            <div className="lg:col-span-5 space-y-6">
+              <span className="text-[#e9c176] text-[11px] tracking-[0.28em] uppercase font-medium">Core Capabilities</span>
+              <h2 className="font-serif-headline text-3xl sm:text-4xl font-normal text-white leading-tight">
+                Specialized Advisory for High-Value Property & Land
+              </h2>
+              <p className="text-[#b5b0a6] font-light text-base leading-relaxed">
+                Whether acquiring a private multi-acre residential estate in Karen, sourcing high-density development land in Westlands, or structuring a joint venture, our practice provides direct, conflict-free representation.
+              </p>
+              
+              <div className="pt-4 border-t border-white/[0.08] space-y-3">
+                <div className="flex items-center gap-3 text-sm text-white">
+                  <ShieldCheck className="w-4 h-4 text-[#e9c176]" />
+                  <span>Direct landowner mandates with audited titles</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-white">
+                  <Lock className="w-4 h-4 text-[#e9c176]" />
+                  <span>Transactions settled through advocate escrow accounts</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-white">
+                  <Globe2 className="w-4 h-4 text-[#e9c176]" />
+                  <span>Dedicated concierge for diaspora & international buyers</span>
+                </div>
               </div>
-            ))}
+
+              <div className="pt-2">
+                <Link
+                  href="/properties"
+                  className="inline-flex items-center gap-2 text-xs text-[#e9c176] hover:text-white uppercase tracking-widest font-semibold transition-colors group"
+                >
+                  <span>Explore Available Opportunities</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+                <span className="text-[10px] tracking-[0.22em] text-[#e9c176] uppercase font-medium block">Advisory 01</span>
+                <h3 className="text-white text-lg font-medium">Prime Residential Brokerage</h3>
+                <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                  Curated luxury homes, penthouses, and country villas in Karen, Runda, Muthaiga, and Westlands with verified freehold or clean leasehold titles.
+                </p>
+              </div>
+
+              <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+                <span className="text-[10px] tracking-[0.22em] text-[#e9c176] uppercase font-medium block">Advisory 02</span>
+                <h3 className="text-white text-lg font-medium">Strategic Land Sourcing</h3>
+                <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                  Unencumbered commercial, industrial, and high-density residential land parcels sourced directly from titled owners with verified beacons.
+                </p>
+              </div>
+
+              <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+                <span className="text-[10px] tracking-[0.22em] text-[#e9c176] uppercase font-medium block">Advisory 03</span>
+                <h3 className="text-white text-lg font-medium">Joint Venture Partnerships</h3>
+                <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                  Transparent co-development structuring connecting prime landowners with tier-1 contractors and institutional capital under milestone escrow.
+                </p>
+              </div>
+
+              <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
+                <span className="text-[10px] tracking-[0.22em] text-[#e9c176] uppercase font-medium block">Advisory 04</span>
+                <h3 className="text-white text-lg font-medium">Diaspora Private Client Desk</h3>
+                <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
+                  End-to-end conveyance representation, virtual site inspections, independent survey audits, and compliant international settlement for overseas buyers.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -350,10 +395,10 @@ export default function HomePage() {
             <div className="relative z-10 h-full flex flex-col justify-end p-8 max-w-xl space-y-2">
               <div className="text-[#e9c176] text-[11px] tracking-[0.24em] uppercase font-medium flex items-center gap-2">
                 <Compass className="w-3.5 h-3.5" />
-                <span>GIS Infrastructure Cadastre</span>
+                <span>Regional Infrastructure & Growth Corridors</span>
               </div>
               <p className="text-sm text-[#b5b0a6] font-light">
-                Synchronized with Nairobi Expressway interchanges, Western Bypass ribbons, and ArdhiSasa land registration records.
+                Strategic positioning aligned with the Nairobi Expressway, Western Bypass, and key arterial corridors across Nairobi.
               </p>
             </div>
           </div>
@@ -375,7 +420,7 @@ export default function HomePage() {
 
           <div className="scroll-fade grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
             <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
-              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">01 / Due Diligence</span>
+              <span className="text-[#e9c176] text-[11px] uppercase tracking-wider block font-medium">Due Diligence</span>
               <h3 className="text-white text-lg font-medium">Clean, Validated Deeds</h3>
               <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
                 Official Ministry of Lands searches, beacon survey validation, and encumbrance checks completed before any property is presented.
@@ -383,7 +428,7 @@ export default function HomePage() {
             </div>
 
             <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
-              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">02 / Pricing</span>
+              <span className="text-[#e9c176] text-[11px] uppercase tracking-wider block font-medium">Direct Mandates</span>
               <h3 className="text-white text-lg font-medium">Direct Mandate Pricing</h3>
               <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
                 Direct agreements with titled landowners and developers protect buyers from multi-layer broker inflation and speculative markups.
@@ -391,7 +436,7 @@ export default function HomePage() {
             </div>
 
             <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
-              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">03 / Security</span>
+              <span className="text-[#e9c176] text-[11px] uppercase tracking-wider block font-medium">Advocate Escrow</span>
               <h3 className="text-white text-lg font-medium">Regulated Client Escrow</h3>
               <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
                 Transactions settle through independent advocate escrow accounts, with capital released strictly upon registered title transfer.
@@ -399,7 +444,7 @@ export default function HomePage() {
             </div>
 
             <div className="p-8 bg-[#14181a] border border-white/5 space-y-3 rounded-sm card-hover">
-              <span className="text-[#e9c176] text-xs font-mono uppercase tracking-wider block">04 / Network</span>
+              <span className="text-[#e9c176] text-[11px] uppercase tracking-wider block font-medium">Discreet Network</span>
               <h3 className="text-white text-lg font-medium">Discreet Off-Market Access</h3>
               <p className="text-[#b5b0a6] text-sm font-light leading-relaxed">
                 Access to prime Nairobi land parcels and boutique luxury developments shared confidentially with vetted private clients.

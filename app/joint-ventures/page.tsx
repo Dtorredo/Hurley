@@ -71,7 +71,7 @@ export default function JointVenturesPage() {
                 <span className="italic text-[#e9c176]">Development Partnerships</span>
               </h1>
               <p className="text-base sm:text-lg text-[#b5b0a6] font-light leading-relaxed max-w-2xl">
-                Bridging the gap between prime Kenyan landowners, institutional capital, and tier-1 real estate developers. We act as the fiduciary transaction architect—structuring equitable, risk-mitigated, and legally secure high-yield co-developments.
+                Connecting prime Kenyan landowners, institutional capital, and tier-1 developers. We structure equitable, legally secure joint venture partnerships backed by advocate escrow and milestone delivery.
               </p>
 
               {/* Core Stat Tickers */}
@@ -136,7 +136,7 @@ export default function JointVenturesPage() {
                       <p className="text-xs text-[#b5b0a6] font-light">Neutral fiduciary custodian protecting all parties</p>
                     </div>
                     <span className="text-[#e9c176] text-[10px] uppercase tracking-widest font-semibold font-mono">
-                      SPV Governance
+                      Joint Venture Legal Structure
                     </span>
                   </div>
 

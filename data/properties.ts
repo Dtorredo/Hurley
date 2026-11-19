@@ -41,9 +41,9 @@ export const PROPERTIES: Property[] = [
     displayPrice: "$3,200,000 USD (KES 415M)",
     footprint: "1.50 Freehold Acres (65,340 sq ft)",
     projectedIrr: "24.5% IRR",
-    titleStatus: "Freehold Single Title Deed • ArdhiSasa Audit Clean",
+    titleStatus: "Freehold Single Title Deed • Title Registry Clean",
     zoning: "Commercial / High-Density Res. (24 Storeys)",
-    auditStatus: "Cadastre & Deed Completed",
+    auditStatus: "Title & Survey Verified",
     description: "High-density mixed-use development site situated along Nairobi's prime Kilimani commercial artery. Cleared for vertical expansion up to 24 suspended storeys with dual frontage tarmac access, perimeter wall, and audited zero encumbrances.",
     imageUrl: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80&fit=crop&auto=format",
     featured: true,
@@ -123,31 +123,30 @@ export const PROPERTIES: Property[] = [
   {
     id: "prop-04",
     slug: "karen-emerald-ridge-enclave",
-    title: "Karen Emerald Ridge • 5 Acres Bespoke Enclave",
-    subtitle: "Karen South • Subdivision Masterplan Approved",
-    assetClass: "Strategic Land",
+    title: "Karen Emerald Ridge • 5-Acre Private Country Estate",
+    subtitle: "Karen South • Near Karen Country Club & Giraffe Centre",
+    assetClass: "Prime Residential",
     corridor: "Karen",
     priceUsd: 4500000,
     priceKes: "KES 585M",
     displayPrice: "$4,500,000 USD (KES 585M)",
     footprint: "5.00 Red Soil Acres",
-    projectedIrr: "+38.4% Net",
-    titleStatus: "Freehold Single Title Deed (Subdivisible into 10 Deeds)",
+    titleStatus: "Clean Freehold Title Deed",
     zoning: "Low-Density Residential (Half-Acre Minimum)",
-    auditStatus: "Survey & Masterplan Completed",
-    description: "Prime indigenous woodland parcel positioned within Karen's most coveted private corridor. Pre-engineered architectural scheme accommodates 10 sovereign half-acre private residential estates with complete communal infrastructure.",
+    auditStatus: "Title Deed & Survey Verified",
+    description: "Rare five-acre indigenous woodland parcel positioned along a quiet private lane in Karen South. Boasts rich red soil, mature indigenous trees, deep borehole access, and perimeter stone walling. Ideal for a private family manor or boutique luxury gated enclave.",
     imageUrl: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80&fit=crop&auto=format",
     featured: true,
     metrics: [
-      { label: "Acquisition Price", value: "$4,500,000" },
-      { label: "Subdivision IRR", value: "+38.4% Net" },
-      { label: "Plot Yield", value: "10 x 0.5-Acre Lots" }
+      { label: "Land Area", value: "5.00 Acres Red Soil" },
+      { label: "Title Deed", value: "Clean Freehold Deed" },
+      { label: "Location", value: "Near Karen Country Club" }
     ],
     specifications: [
-      { label: "Title Architecture", value: "Freehold Title (Subdivisible to 10 Deeds)" },
-      { label: "Water & Power", value: "Deep borehole + 3-Phase Mains on site" },
-      { label: "Access Corridor", value: "Paved dual-access via Karen Country Club" },
-      { label: "Target GDV", value: "$6.8M Gross GDV on individual parcel retail" }
+      { label: "Plot Characteristics", value: "Gentle slope, mature indigenous trees, deep red soil" },
+      { label: "Water & Power", value: "High-yield borehole + 3-phase mains connection on site" },
+      { label: "Access & Security", value: "Tarmac access, stone perimeter wall, gated community boundary" },
+      { label: "Conveyance Status", value: "Freehold Title Deed ready for direct advocate escrow transfer" }
     ]
   },
   {
@@ -198,21 +197,21 @@ export const PROPERTIES: Property[] = [
     description: "Architectural high-rise landmark positioned along the Westlands ridge with sunset panoramas over Nairobi. Fully serviced residential enclave featuring Technogym health pavilion, heated infinity pool, concierge services, and 100% generator backup.",
     imageUrl: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80&fit=crop&auto=format",
     metrics: [
-      { label: "Entry Allocation", value: "$85,000" },
-      { label: "Net Cashflow", value: "9.6% Net p.a." },
-      { label: "Gross Yield", value: "11.8% Gross" }
+      { label: "Starting Price", value: "$85,000 (KES 11M)" },
+      { label: "Layouts", value: "1, 2 & 3 Bed Suites" },
+      { label: "Location", value: "General Mathenge, Westlands" }
     ],
     specifications: [
-      { label: "1-Bed Executive Suite", value: "58 sqm • $85,000" },
-      { label: "2-Bed Premier Residence", value: "96 sqm • $145,000" },
-      { label: "3-Bed Sky Villa + DSQ", value: "162 sqm • $220,000" },
-      { label: "Operator", value: "Prime Managed Asset Program" }
+      { label: "1-Bed Executive Suite", value: "58 sqm • $85,000 USD" },
+      { label: "2-Bed Premier Residence", value: "96 sqm • $145,000 USD" },
+      { label: "3-Bed Sky Villa + DSQ", value: "162 sqm • $220,000 USD" },
+      { label: "Amenities", value: "Heated infinity pool, Technogym, full generator backup & concierge" }
     ]
   },
   {
     id: "prop-07",
     slug: "riverside-sanctuary-mixed-use-tower",
-    title: "Riverside Sanctuary Mixed-Use Tower",
+    title: "Riverside Sanctuary Luxury Residences",
     subtitle: "Riverside Drive • UN Diplomatic Corridor",
     assetClass: "Prime Residential",
     corridor: "Westlands",
@@ -220,22 +219,21 @@ export const PROPERTIES: Property[] = [
     priceKes: "KES 15.0M",
     displayPrice: "From $115,000 USD (Furnished)",
     footprint: "64 – 180 sqm Keys",
-    yieldNet: "12.4% Annual USD",
-    titleStatus: "ArdhiSasa Cleared Sectional Title",
-    zoning: "Diplomatic Mixed-Use Hospitality",
+    titleStatus: "Clean Sectional Title Deed Registered",
+    zoning: "Diplomatic Residential",
     auditStatus: "Full Technical & Legal Audit",
-    description: "Designed and operated specifically for medium-term leases catering to multinational executives, embassy delegates, and UN staff in Gigiri and Riverside Drive. Fully furnished hospitality keys under professional management with automated cross-border quarterly dividend distributions.",
+    description: "Designed for discerning homeowners and corporate expatriates on Riverside Drive. Features luxury furnished residences with European fixtures, heated swimming pool, 24-hour concierge, and secure underground parking.",
     imageUrl: "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=900&q=80&fit=crop&auto=format",
     metrics: [
-      { label: "Anticipated Cash Yield", value: "12.4% Annual USD" },
-      { label: "Turnkey Entry", value: "$115,000 Furnished" },
-      { label: "Lease Operator", value: "Swiss-Belhotel Operations" }
+      { label: "Furnished Suites", value: "From $115,000 USD" },
+      { label: "Tenancy Pool", value: "Embassies & UN Agencies" },
+      { label: "Location", value: "Riverside Drive, Westlands" }
     ],
     specifications: [
-      { label: "Management Structure", value: "Swiss-Belhotel Professional Operations" },
-      { label: "Distribution Frequency", value: "Quarterly USD Escrow Payouts" },
-      { label: "Target Tenant Pool", value: "UN, World Bank, Embassy Expatriates" },
-      { label: "Cap Rate Model", value: "Underwritten at 92% Average Occupancy" }
+      { label: "Residence Types", value: "Fully furnished 1 & 2-bedroom executive residences" },
+      { label: "Finishes & Fittings", value: "European imported kitchens, hardwood floors, private balconies" },
+      { label: "Tenant Profile", value: "Multinational corporate, UN and diplomatic corps long-term leases" },
+      { label: "Title Status", value: "Sectional Title Deed registered under Ministry of Lands" }
     ]
   },
   {
@@ -249,28 +247,27 @@ export const PROPERTIES: Property[] = [
     priceKes: "KES 845M",
     displayPrice: "Seeking $6.5M USD Equity Partner",
     footprint: "1.80 Freehold Acres",
-    projectedIrr: "24.5% Net IRR",
-    titleStatus: "Clean Freehold Title Vested in SPV",
-    zoning: "Dual 24-Storey Mixed-Use Towers",
-    auditStatus: "Data Room Open",
-    description: "Prime commercial corner plot with clean freehold title already vested into the Special Purpose Vehicle (SPV). Approved for dual 24-storey towers comprising ground-floor boutique retail, grade-A serviced executive suites, and panoramic rooftop amenities. Seeking Anchor Institutional Equity Partner or Tier-1 Co-Developer.",
+    titleStatus: "Clean Freehold Title Ready for JV Transfer",
+    zoning: "Dual 24-Storey Mixed-Use Development",
+    auditStatus: "Approvals & Deed Verified",
+    description: "Prime commercial corner plot with clean freehold title. Approved for dual 24-storey towers comprising ground-floor boutique retail, grade-A serviced executive suites, and panoramic rooftop amenities. Seeking Anchor Institutional Equity Partner or Tier-1 Co-Developer.",
     imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&fit=crop&auto=format",
     metrics: [
-      { label: "Required Equity", value: "$6.5M USD" },
-      { label: "Land Equity Value", value: "$4.0M USD" },
-      { label: "Underwritten IRR", value: "24.5% Net" }
+      { label: "Required Co-Capital", value: "$6.5M USD" },
+      { label: "Land Equity Valuation", value: "$4.0M USD" },
+      { label: "Site Acreage", value: "1.80 Acres Corner Plot" }
     ],
     specifications: [
-      { label: "SPV Governance", value: "Neutral Advocate Escrow & Custody" },
+      { label: "Legal Structure", value: "Advocate escrow & joint venture agreement" },
       { label: "Approved FAR", value: "Dual 24-Storey Suspended Towers" },
-      { label: "Landowner Split", value: "35% Equity Share in Completed GDV" },
+      { label: "Landowner Split", value: "35% Equity Share in Completed Development" },
       { label: "Developer Co-Commitment", value: "100% Construction Guarantee" }
     ]
   },
   {
     id: "prop-09",
     slug: "karen-gated-estate-12-luxury-eco-villas-jv",
-    title: "Karen Gated Estate • 12 Luxury Eco-Villas (JV)",
+    title: "Karen Gated Estate • 12 Luxury Country Villas (JV)",
     subtitle: "Low-Density Prime • Karen Country Enclave",
     assetClass: "Joint Ventures",
     corridor: "Karen",
@@ -278,22 +275,21 @@ export const PROPERTIES: Property[] = [
     priceKes: "KES 495M",
     displayPrice: "$3.8M USD Construction Capex",
     footprint: "5.0 Acres Red Soil",
-    projectedIrr: "34.0% Net Margin",
-    titleStatus: "Freehold Clean Single Deed",
+    titleStatus: "Clean Freehold Single Title Deed",
     zoning: "12 Half-Acre Private Country Villas",
     auditStatus: "Ready to Groundbreak (25% Pre-Sold)",
-    description: "Prime red-soil residential land nestled in serene Karen. Full architectural schematics, NEMA environmental licenses, and physical development approvals granted. 12 half-acre contemporary country villas planned with dedicated club amenities. Groundbreaking scheduled Q3 2026.",
+    description: "Prime red-soil residential land nestled in serene Karen. Full architectural schematics, NEMA environmental licenses, and physical development approvals granted. 12 half-acre contemporary country villas planned with dedicated club amenities. Groundbreaking scheduled 2026.",
     imageUrl: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80&fit=crop&auto=format",
     metrics: [
-      { label: "Construction Funding", value: "$3.8M USD" },
-      { label: "Pre-Sold Units", value: "3 of 12 (25%)" },
-      { label: "Projected Net Margin", value: "34.0%" }
+      { label: "Development Scale", value: "12 Contemporary Country Villas" },
+      { label: "Villa Size", value: "5 Ensuite Bedrooms + DSQ" },
+      { label: "Plot Allocation", value: "0.50 Acre per Villa" }
     ],
     specifications: [
-      { label: "Land Footprint", value: "5.00 Acres Pristine Red Soil" },
-      { label: "Villa Schemes", value: "5-Bedroom Ensuite + DSQ + Pool" },
-      { label: "Sales Velocity", value: "3 Key Units Reserved at Deposit" },
-      { label: "Target IRR", value: "28.5% Underwritten Exit" }
+      { label: "Architectural Layout", value: "5 ensuite bedrooms, double-volume living area, family lounge & pool" },
+      { label: "Grounds & Setting", value: "Private half-acre landscaped gardens within 5-acre gated sanctuary" },
+      { label: "Sustainability", value: "Full solar microgrid, rainwater harvesting & deep private borehole" },
+      { label: "Title Conveyance", value: "Individual sectional freehold title deeds for each villa" }
     ]
   },
   {
