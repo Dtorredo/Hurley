@@ -117,7 +117,7 @@ export default function Navbar() {
               href="/#investor-intake"
               className="btn-shimmer inline-flex items-center px-4 py-2 border border-[#e9c176]/50 text-[#101415] font-semibold text-[11px] tracking-[0.18em] uppercase hover:text-black transition-all duration-300 rounded-sm"
             >
-              Private Mandate
+              Invest With Us
             </Link>
 
             {/* Mobile menu button */}
@@ -149,6 +149,13 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/#investor-intake"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-center py-2.5 bg-[#e9c176] text-[#101415] font-semibold text-xs tracking-widest uppercase rounded-sm mt-2"
+          >
+            Invest With Us
+          </Link>
           <a
             href={waLink}
             target="_blank"
