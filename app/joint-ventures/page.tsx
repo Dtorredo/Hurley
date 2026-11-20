@@ -12,12 +12,12 @@ import {
   UploadCloud, 
   Lock, 
   Send, 
-  MessageSquare,
   FileCheck2,
   TrendingUp,
   Percent
 } from 'lucide-react';
 import { useToast } from '@/components/ToastContext';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 export default function JointVenturesPage() {
   const { showToast } = useToast();
@@ -106,10 +106,10 @@ export default function JointVenturesPage() {
                   href={waUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-5 py-3.5 rounded-sm border border-white/15 text-white text-xs font-medium hover:border-[#e9c176] hover:text-[#e9c176] transition-colors gap-2"
+                  className="inline-flex items-center justify-center px-5 py-3.5 rounded-sm border border-white/15 text-white text-xs font-medium hover:border-[#25D366] hover:text-[#25D366] transition-colors gap-2"
                 >
-                  <MessageSquare className="w-4 h-4 text-[#25D366]" />
-                  <span>Direct WhatsApp Desk</span>
+                  <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                  <span>WhatsApp</span>
                 </a>
               </div>
             </div>
@@ -344,27 +344,18 @@ export default function JointVenturesPage() {
                 </div>
               </div>
 
-              <div className="border-t border-white/10 pt-6 space-y-2">
-                <span className="text-xs text-[#9a8f80] uppercase tracking-wider block font-mono">Urgent Transaction or Direct Advisory</span>
-                <p className="text-xs text-[#b5b0a6] font-light">Discuss your proposal directly with our Nairobi Principal Advisor:</p>
-                <div className="space-y-1.5 pt-1">
-                  <a
-                    href="https://wa.me/254112144064"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-[#25D366] hover:text-[#25D366]/80 text-xs font-semibold tracking-wide transition-colors"
-                  >
-                    <MessageSquare className="w-4 h-4" />
-                    <span>Sales & JV Desk: +254 112 144 064 (Christopher)</span>
-                  </a>
-                  <a
-                    href="tel:+254720378737"
-                    className="flex items-center gap-2 text-white/80 hover:text-[#e9c176] text-xs font-medium tracking-wide transition-colors"
-                  >
-                    <ShieldCheck className="w-4 h-4 text-[#e9c176]" />
-                    <span>Executive Desk: +254 720 378 737 (Joyce)</span>
-                  </a>
-                </div>
+              <div className="border-t border-white/10 pt-6 space-y-3">
+                <span className="text-xs text-[#9a8f80] uppercase tracking-wider block font-mono">Direct Advisory</span>
+                <p className="text-xs text-[#b5b0a6] font-light">Discuss your proposal directly with our advisory desk:</p>
+                <a
+                  href={waUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-sm bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold uppercase tracking-wider transition-colors shadow-md"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>Chat on WhatsApp</span>
+                </a>
               </div>
             </div>
 
@@ -607,7 +598,7 @@ export default function JointVenturesPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-sm bg-[#25D366] text-white text-xs font-semibold uppercase tracking-wider"
               >
-                <MessageSquare className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span>Notify Desk on WhatsApp</span>
               </a>
             </div>

@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { MessageSquare, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -108,10 +109,10 @@ export default function Navbar() {
               href={waLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 text-[12px] uppercase tracking-wider text-[#b5b0a6] hover:text-[#e9c176] transition-colors duration-200"
+              className="hidden sm:inline-flex items-center gap-2 text-[12px] uppercase tracking-wider text-[#b5b0a6] hover:text-[#25D366] transition-colors duration-200"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span>
-              <span>WhatsApp Desk</span>
+              <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+              <span>WhatsApp</span>
             </a>
             <Link
               href="/#investor-intake"
@@ -162,8 +163,8 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 pt-2 text-[#25D366] text-xs font-semibold uppercase tracking-wider"
           >
-            <MessageSquare className="w-4 h-4" />
-            <span>Connect on WhatsApp</span>
+            <WhatsAppIcon className="w-4 h-4" />
+            <span>WhatsApp</span>
           </a>
         </div>
       </div>

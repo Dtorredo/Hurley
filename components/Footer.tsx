@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ShieldCheck, Scale, MapPin, Mail, Phone } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Footer() {
   return (
@@ -84,16 +85,10 @@ export default function Footer() {
               <li>
                 <span className="text-white font-medium block">Joyce Mumbi Wahome</span>
                 <span className="text-white/50 text-[11px]">Founder & CEO</span>
-                <a href="tel:+254720378737" className="text-[#e9c176] hover:underline font-mono text-[11px] block mt-0.5">
-                  +254 720 378 737
-                </a>
               </li>
               <li className="pt-1">
                 <span className="text-white font-medium block">Kiptanui Christopher Kipkemboi</span>
                 <span className="text-white/50 text-[11px]">Head of Sales</span>
-                <a href="https://wa.me/254112144064" target="_blank" rel="noopener noreferrer" className="text-[#e9c176] hover:underline font-mono text-[11px] block mt-0.5">
-                  +254 112 144 064
-                </a>
               </li>
               <li className="pt-2 text-[11px] text-[#e9c176]">
                 London • Dubai • Nairobi
@@ -114,15 +109,16 @@ export default function Footer() {
                 <Mail className="w-3.5 h-3.5" />
                 privateclient@hurleysinternational.com
               </p>
-              <div className="pt-1 space-y-1 font-mono text-[11px]">
-                <p className="text-white/80 flex items-center gap-1.5">
-                  <Phone className="w-3.5 h-3.5 text-[#e9c176]" />
-                  <a href="tel:+254720378737" className="hover:text-white transition-colors">+254 720 378 737 (Joyce)</a>
-                </p>
-                <p className="text-white/80 flex items-center gap-1.5">
-                  <Phone className="w-3.5 h-3.5 text-[#e9c176]" />
-                  <a href="https://wa.me/254112144064" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+254 112 144 064 (Christopher)</a>
-                </p>
+              <div className="pt-2">
+                <a
+                  href="https://wa.me/254112144064?text=Hello%20Hurleys%20Desk%2C%20I%20am%20inquiring%20about%20Kenyan%20real%20estate%20opportunities"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#25D366] hover:underline font-medium text-xs"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>WhatsApp</span>
+                </a>
               </div>
             </div>
             <p className="pt-2 text-[10px] text-white/40 leading-relaxed font-light">

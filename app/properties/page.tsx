@@ -11,13 +11,13 @@ import {
   Check, 
   MapPin, 
   ExternalLink,
-  MessageSquare,
   Lock,
   Send,
   Eye
 } from 'lucide-react';
 import { PROPERTIES, Property } from '@/data/properties';
 import { useToast } from '@/components/ToastContext';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 export default function PropertiesPage() {
   const { showToast } = useToast();
@@ -281,11 +281,11 @@ export default function PropertiesPage() {
                           href={waPropUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center justify-between text-xs text-[#b5b0a6] hover:text-[#e9c176] transition-colors py-1 group"
+                          className="flex items-center justify-between text-xs text-[#b5b0a6] hover:text-[#25D366] transition-colors py-1 group"
                         >
                           <span className="flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]"></span>
-                            <span>Direct WhatsApp Concierge: Enquire on this Property</span>
+                            <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                            <span>Enquire on WhatsApp</span>
                           </span>
                           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                         </a>

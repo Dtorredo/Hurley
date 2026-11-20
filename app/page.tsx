@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { 
   ArrowUpRight, 
   ArrowRight,  
-  MessageSquare, 
   CheckCircle2, 
   Building2, 
   ShieldCheck, 
@@ -18,6 +17,7 @@ import {
 } from 'lucide-react';
 import { PROPERTIES, CORRIDOR_DATA } from '@/data/properties';
 import PrivateMandateForm from '@/components/PrivateMandateForm';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 export default function HomePage() {
   const featuredProperties = PROPERTIES.slice(0, 3);
@@ -75,8 +75,8 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-[12px] tracking-[0.15em] text-[#25D366] hover:underline"
               >
-                <MessageSquare className="w-4 h-4" />
-                <span>WhatsApp Concierge (+254 112 144 064)</span>
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>WhatsApp</span>
               </a>
             </div>
           </div>
@@ -493,13 +493,7 @@ export default function HomePage() {
               </p>
               <div className="pt-4 border-t border-white/5 space-y-2 text-xs text-[#b5b0a6]/80 font-mono">
                 <div className="flex items-center justify-between">
-                  <span>Direct Line</span>
-                  <a href="tel:+254720378737" className="text-white hover:text-[#e9c176] transition-colors font-medium">
-                    +254 720 378 737
-                  </a>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Executive Office</span>
+                  <span>Email</span>
                   <a href="mailto:joyce@hurleysinternational.com" className="text-[#e9c176] hover:underline">
                     joyce@hurleysinternational.com
                   </a>
@@ -527,13 +521,7 @@ export default function HomePage() {
               </p>
               <div className="pt-4 border-t border-white/5 space-y-2 text-xs text-[#b5b0a6]/80 font-mono">
                 <div className="flex items-center justify-between">
-                  <span>Direct / WhatsApp</span>
-                  <a href="https://wa.me/254112144064" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#e9c176] transition-colors font-medium">
-                    +254 112 144 064
-                  </a>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Private Client Sales Desk</span>
+                  <span>Email</span>
                   <a href="mailto:kiptanui@hurleysinternational.com" className="text-[#e9c176] hover:underline">
                     kiptanui@hurleysinternational.com
                   </a>
@@ -633,25 +621,15 @@ export default function HomePage() {
               </div>
 
               <div className="pt-6 border-t border-white/[0.06] space-y-3">
-                <div className="text-[11px] tracking-[0.2em] uppercase text-[#e9c176]">Direct Advisory Lines</div>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-xs font-mono">
-                  <a
-                    href="https://wa.me/254112144064"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-white hover:text-[#e9c176] transition-colors"
-                  >
-                    <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
-                    <span>Sales: +254 112 144 064 (Christopher)</span>
-                  </a>
-                  <a
-                    href="tel:+254720378737"
-                    className="inline-flex items-center gap-2 text-white hover:text-[#e9c176] transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-[#e9c176]" />
-                    <span>Executive: +254 720 378 737 (Joyce)</span>
-                  </a>
-                </div>
+                <a
+                  href={waUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-sm bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold uppercase tracking-wider transition-colors shadow-md"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>Chat on WhatsApp</span>
+                </a>
               </div>
             </div>
 
