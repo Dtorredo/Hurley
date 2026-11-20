@@ -47,7 +47,7 @@ export default function JointVenturesPage() {
     );
   };
 
-  const waUrl = "https://wa.me/254700000000?text=Hello%20Hurleys%20Desk%2C%20I%20am%20inquiring%20about%20a%20Joint%20Venture%20partnership%20in%20Kenya";
+  const waUrl = "https://wa.me/254112144064?text=Hello%20Hurleys%20Desk%2C%20I%20am%20inquiring%20about%20a%20Joint%20Venture%20partnership%20in%20Kenya";
 
   return (
     <div className="flex flex-col w-full text-[#e0e3e5] bg-[#101415]">
@@ -347,15 +347,24 @@ export default function JointVenturesPage() {
               <div className="border-t border-white/10 pt-6 space-y-2">
                 <span className="text-xs text-[#9a8f80] uppercase tracking-wider block font-mono">Urgent Transaction or Direct Advisory</span>
                 <p className="text-xs text-[#b5b0a6] font-light">Discuss your proposal directly with our Nairobi Principal Advisor:</p>
-                <a
-                  href={waUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[#25D366] hover:text-[#25D366]/80 text-xs font-semibold tracking-wide transition-colors"
-                >
-                  <MessageSquare className="w-4 h-4" />
-                  <span>Connect on WhatsApp Desk (+254 700 000 000)</span>
-                </a>
+                <div className="space-y-1.5 pt-1">
+                  <a
+                    href="https://wa.me/254112144064"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#25D366] hover:text-[#25D366]/80 text-xs font-semibold tracking-wide transition-colors"
+                  >
+                    <MessageSquare className="w-4 h-4" />
+                    <span>Sales & JV Desk: +254 112 144 064 (Christopher)</span>
+                  </a>
+                  <a
+                    href="tel:+254720378737"
+                    className="flex items-center gap-2 text-white/80 hover:text-[#e9c176] text-xs font-medium tracking-wide transition-colors"
+                  >
+                    <ShieldCheck className="w-4 h-4 text-[#e9c176]" />
+                    <span>Executive Desk: +254 720 378 737 (Joyce)</span>
+                  </a>
+                </div>
               </div>
             </div>
 

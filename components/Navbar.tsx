@@ -49,7 +49,7 @@ export default function Navbar() {
     { label: 'ROI Calculator', href: '/roi-calculator' },
   ];
 
-  const waLink = "https://wa.me/254700000000?text=Hello%20Hurleys%20Desk%2C%20I%20am%20inquiring%20about%20Kenyan%20real%20estate%20opportunities";
+  const waLink = "https://wa.me/254112144064?text=Hello%20Hurleys%20Desk%2C%20I%20am%20inquiring%20about%20Kenyan%20real%20estate%20opportunities";
 
   return (
     <header

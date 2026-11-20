@@ -101,7 +101,7 @@ export default function RoiCalculatorPage() {
     }, 1500);
   };
 
-  const waUrl = `https://wa.me/254700000000?text=${encodeURIComponent(
+  const waUrl = `https://wa.me/254112144064?text=${encodeURIComponent(
     `Hello Hurleys Desk, I just modeled an acquisition of ${formatMoney(purchasePrice)} targeting ${netYield.toFixed(2)}% net yield over ${horizonYears} years.`
   )}`;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { 
   ArrowUpRight, 
-  ArrowRight, 
+  ArrowRight,  
   MessageSquare, 
   CheckCircle2, 
   Building2, 
@@ -13,14 +13,15 @@ import {
   Compass, 
   Globe2, 
   Briefcase,
-  Lock
+  Lock,
+  Phone
 } from 'lucide-react';
 import { PROPERTIES, CORRIDOR_DATA } from '@/data/properties';
 import PrivateMandateForm from '@/components/PrivateMandateForm';
 
 export default function HomePage() {
   const featuredProperties = PROPERTIES.slice(0, 3);
-  const waUrl = "https://wa.me/254700000000?text=Hello%20Hurleys%20Desk%2C%20I%20am%20inquiring%20about%20Kenyan%20sovereign%20real%20estate%20opportunities";
+  const waUrl = "https://wa.me/254112144064?text=Hello%20Hurleys%20Desk%2C%20I%20am%20inquiring%20about%20Kenyan%20real%20estate%20opportunities";
 
   return (
     <div className="flex flex-col w-full text-[#e0e3e5]">
@@ -75,7 +76,7 @@ export default function HomePage() {
                 className="inline-flex items-center gap-2 text-[12px] tracking-[0.15em] text-[#25D366] hover:underline"
               >
                 <MessageSquare className="w-4 h-4" />
-                <span>WhatsApp Concierge (+254 700 000 000)</span>
+                <span>WhatsApp Concierge (+254 112 144 064)</span>
               </a>
             </div>
           </div>
@@ -490,9 +491,19 @@ export default function HomePage() {
               <p className="text-[#b5b0a6] font-light text-sm leading-relaxed">
                 Guiding Hurleys International&apos;s strategic vision and fiduciary practice. Joyce advises family offices, institutions, and diaspora investors on high-value asset acquisitions, joint venture structures, and portfolio allocation in Kenya.
               </p>
-              <div className="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#b5b0a6]/80 font-mono">
-                <span>Executive Office</span>
-                <span className="text-[#e9c176]">joyce@hurleysinternational.com</span>
+              <div className="pt-4 border-t border-white/5 space-y-2 text-xs text-[#b5b0a6]/80 font-mono">
+                <div className="flex items-center justify-between">
+                  <span>Direct Line</span>
+                  <a href="tel:+254720378737" className="text-white hover:text-[#e9c176] transition-colors font-medium">
+                    +254 720 378 737
+                  </a>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Executive Office</span>
+                  <a href="mailto:joyce@hurleysinternational.com" className="text-[#e9c176] hover:underline">
+                    joyce@hurleysinternational.com
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -514,9 +525,19 @@ export default function HomePage() {
               <p className="text-[#b5b0a6] font-light text-sm leading-relaxed">
                 Directing prime commercial mandates, off-market acreage syndication, and private client transactions across Westlands, Karen, Kilimani, and emerging growth corridors. Specializes in direct titleholder negotiation and structuring.
               </p>
-              <div className="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-[#b5b0a6]/80 font-mono">
-                <span>Private Client Sales Desk</span>
-                <span className="text-[#e9c176]">kiptanui@hurleysinternational.com</span>
+              <div className="pt-4 border-t border-white/5 space-y-2 text-xs text-[#b5b0a6]/80 font-mono">
+                <div className="flex items-center justify-between">
+                  <span>Direct / WhatsApp</span>
+                  <a href="https://wa.me/254112144064" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#e9c176] transition-colors font-medium">
+                    +254 112 144 064
+                  </a>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Private Client Sales Desk</span>
+                  <a href="mailto:kiptanui@hurleysinternational.com" className="text-[#e9c176] hover:underline">
+                    kiptanui@hurleysinternational.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -611,17 +632,26 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-white/[0.06]">
-                <div className="text-[11px] tracking-[0.2em] uppercase text-[#e9c176] mb-2">Direct Partner Line</div>
-                <a
-                  href={waUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-white hover:text-[#e9c176] transition-colors font-medium"
-                >
-                  <MessageSquare className="w-4 h-4 text-[#25D366]" />
-                  <span>WhatsApp Private Desk (+254 700 000 000)</span>
-                </a>
+              <div className="pt-6 border-t border-white/[0.06] space-y-3">
+                <div className="text-[11px] tracking-[0.2em] uppercase text-[#e9c176]">Direct Advisory Lines</div>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-xs font-mono">
+                  <a
+                    href="https://wa.me/254112144064"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-white hover:text-[#e9c176] transition-colors"
+                  >
+                    <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
+                    <span>Sales: +254 112 144 064 (Christopher)</span>
+                  </a>
+                  <a
+                    href="tel:+254720378737"
+                    className="inline-flex items-center gap-2 text-white hover:text-[#e9c176] transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-[#e9c176]" />
+                    <span>Executive: +254 720 378 737 (Joyce)</span>
+                  </a>
+                </div>
               </div>
             </div>
 

@@ -55,7 +55,7 @@ export default function PropertiesPage() {
     });
   };
 
-  const waBase = "https://wa.me/254700000000?text=";
+  const waBase = "https://wa.me/254112144064?text=";
 
   return (
     <div className="flex flex-col w-full text-[#e0e3e5] bg-[#101415]">
