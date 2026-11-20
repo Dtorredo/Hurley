@@ -491,13 +491,22 @@ export default function HomePage() {
               <p className="text-[#b5b0a6] font-light text-sm leading-relaxed">
                 Guiding Hurleys International&apos;s strategic vision and fiduciary practice. Joyce advises family offices, institutions, and diaspora investors on high-value asset acquisitions, joint venture structures, and portfolio allocation in Kenya.
               </p>
-              <div className="pt-4 border-t border-white/5 space-y-2 text-xs text-[#b5b0a6]/80 font-mono">
+              <div className="pt-4 border-t border-white/5 space-y-3 text-xs text-[#b5b0a6]/80 font-mono">
                 <div className="flex items-center justify-between">
                   <span>Email</span>
                   <a href="mailto:joyce@hurleysinternational.com" className="text-[#e9c176] hover:underline">
                     joyce@hurleysinternational.com
                   </a>
                 </div>
+                <a
+                  href="https://wa.me/254720378737?text=Hello%20Joyce%2C%20I%20am%20inquiring%20about%20Kenyan%20real%20estate%20opportunities"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full py-2.5 rounded-sm bg-[#25D366] hover:bg-[#1ebe57] text-white text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>Reach Out</span>
+                </a>
               </div>
             </div>
 
@@ -519,13 +528,22 @@ export default function HomePage() {
               <p className="text-[#b5b0a6] font-light text-sm leading-relaxed">
                 Directing prime commercial mandates, off-market acreage syndication, and private client transactions across Westlands, Karen, Kilimani, and emerging growth corridors. Specializes in direct titleholder negotiation and structuring.
               </p>
-              <div className="pt-4 border-t border-white/5 space-y-2 text-xs text-[#b5b0a6]/80 font-mono">
+              <div className="pt-4 border-t border-white/5 space-y-3 text-xs text-[#b5b0a6]/80 font-mono">
                 <div className="flex items-center justify-between">
                   <span>Email</span>
                   <a href="mailto:kiptanui@hurleysinternational.com" className="text-[#e9c176] hover:underline">
                     kiptanui@hurleysinternational.com
                   </a>
                 </div>
+                <a
+                  href="https://wa.me/254112144064?text=Hello%20Christopher%2C%20I%20am%20inquiring%20about%20Kenyan%20real%20estate%20opportunities"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full py-2.5 rounded-sm bg-[#25D366] hover:bg-[#1ebe57] text-white text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  <span>Reach Out</span>
+                </a>
               </div>
             </div>
           </div>
